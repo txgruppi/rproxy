@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script type="module">
+      import init, { proxy } from "./dist/asma/main.js";
+      (async () => {
+        await init();
+        console.log(await proxy("MTIzNDU2NzgxMjM0NTY3OKFgvlFWIFjZPqfTMTPwkBM="));
+      })();
+    </script>
+  </body>
+</html>
