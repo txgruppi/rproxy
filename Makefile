@@ -9,7 +9,7 @@ build::
 
 # Copy distribution files
 	@cp asma/pkg/asma.js $(JS_PATH)
-	@cp asma/pkg/asma_bg.wasm dist/asma/asma_bg.wasm
+	@cp asma/pkg/$(ORIGINAL_WASM_FILENAME) dist/asma/$(NEW_WASM_FILENAME)
 
 # Display build information
 # @echo "JS size:" $(shell ls -lh $(JS_PATH) |awk '{print $$5}')
